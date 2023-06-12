@@ -16,7 +16,7 @@ steps:
     - '--vpc-connector'
     - 'vpc-connector-001'
     - '--set-env-vars'
-    - 'BACKEND_URL=https://cloud-run-test-backend-n5pwu7fhga-du.a.run.app'
+    - 'BACKEND_URL=http://cloud-run-test-backend-n5pwu7fhga-du.a.run.app'
     - '--ingress'
     - 'all'
 # - name: 'gcr.io/cloud-builders/gcloud'
