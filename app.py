@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    message = "It's running!!!!!!!!!!!! v08"
+    message = "It's running!!!!!!!!!!!! v09"
 
     """Get Cloud Run environment variables."""
     service = os.environ.get('K_SERVICE', 'Unknown service')
