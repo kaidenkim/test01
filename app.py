@@ -26,9 +26,11 @@ def hello():
 
 @app.route('/serverless')
 def serverless():
+    # Get environment variables, BACKEND_URL
+    backend_url = os.environ.get('BACKEND_URL', 'Unknown URL')
+
     # Call a REST API
-    url = "http://10.178.0.2"
-    response = requests.get(url)
+    response = requests.get(backend_url)
     message = response.text
 
     """Return a friendly HTTP greeting."""
