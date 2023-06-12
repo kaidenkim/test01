@@ -5,6 +5,8 @@ steps:
   args: [ 'push', 'gcr.io/$PROJECT_ID/cloud-run-test']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
-  - 'tag'
+  - 'container'
+  - 'images'
+  - 'add-tag'
   - 'gcr.io/$PROJECT_ID/cloud-run-test'
   - 'latest'
