@@ -30,11 +30,14 @@ def serverless():
     backend_url = os.environ.get('BACKEND_URL', 'Unknown URL')
 
     # Call a REST API
-    response = requests.get(backend_url)
-    message = response.text
+    response1 = requests.get("{}/backend1".format(backend_url))
+    message1 = response1.text
+
+    response2 = requests.get("{}/backend2".format(backend_url))
+    message2 = response2.text
 
     """Return a friendly HTTP greeting."""
-    message = "Serverless VPC Connector Test: {}".format(message)
+    message = "Serverless VPC Connector Test: BACKEND1={}, BACKEND2={}".format(message1, message2)
 
     """Get Cloud Run environment variables."""
     service = os.environ.get('K_SERVICE', 'Unknown service')
