@@ -19,6 +19,8 @@ steps:
     - 'BACKEND_URL=https://cloud-run-test-backend-n5pwu7fhga-du.a.run.app'
     - '--ingress'
     - 'all'
+    - '--vpc-egress'
+    - 'all-traffic'
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args:
 #   - 'container'
