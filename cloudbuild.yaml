@@ -14,7 +14,7 @@ steps:
     - 'asia-northeast3'
     - '--allow-unauthenticated'
     - '--vpc-connector'
-    - 'vpc-connector-01'
+    - 'vpc-connector-001'
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args:
 #   - 'container'
