@@ -37,7 +37,7 @@ def serverless():
     message2 = response2.text
 
     """Return a friendly HTTP greeting."""
-    message = "Serverless VPC Connector Test: BACKEND1={}, BACKEND2={}".format(message1, message2)
+    message = "Serverless VPC Connector Test: URL={}\nBACKEND1={}\nBACKEND2={}".format(backend_url, message1, message2)
 
     """Get Cloud Run environment variables."""
     service = os.environ.get('K_SERVICE', 'Unknown service')
