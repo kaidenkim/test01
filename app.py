@@ -31,7 +31,7 @@ def serverless():
 
     # Call a REST API
     response1 = requests.get("{}/backend1".format(backend_url))
-    message1 = response1.textt
+    message1 = response1.text
 
     response2 = requests.get("{}/backend2".format(backend_url))
     message2 = response2.text
