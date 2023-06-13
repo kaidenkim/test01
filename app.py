@@ -30,7 +30,7 @@ def serverless():
     backend_url = os.environ.get('BACKEND_URL', 'Unknown URL')
 
     # Call a REST API
-    response1 = requests.get("{}/backend1".format(backend_url))
+    response1 = requests.get("{}/backend12".format(backend_url))
     message1 = response1.text
 
     response2 = requests.get("{}/backend2".format(backend_url))
